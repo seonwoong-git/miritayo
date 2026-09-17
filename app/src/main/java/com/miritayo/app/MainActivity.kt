@@ -43,8 +43,8 @@ private enum class Incident(val label:String,val icon:String,val message:String,
     WRONG_BUS("다른 버스를 탔을 때","🚌","다른 버스를 탔어요. 괜찮아요.","다음 안전한 정류장에서 내려요.", listOf("버스 번호를 다시 확인해요.","안전하게 다음 정류장까지 가요.","내린 뒤 필요하면 도움을 요청해요.")),
     DELAY("버스가 늦을 때","⏱️","버스가 늦고 있어요. 괜찮아요.","이 정류장에서 기다려요.", listOf("정류장 안쪽에서 기다려요.","도착예정 시간을 다시 확인해요.","오래 기다리기 어렵다면 도움을 요청해요."))
 }
-data class Log(val type:Incident,val help:Boolean,val seconds:Int,val at:Long)
-data class AppSettings(val tts:Boolean=true,val vibrate:Boolean=true,val largeText:Boolean=false)
+private data class Log(val type:Incident,val help:Boolean,val seconds:Int,val at:Long)
+private data class AppSettings(val tts:Boolean=true,val vibrate:Boolean=true,val largeText:Boolean=false)
 
 class MainActivity:ComponentActivity(){
     override fun onCreate(savedInstanceState:Bundle?){super.onCreate(savedInstanceState);setContent{MiritayoApp()}}

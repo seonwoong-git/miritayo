@@ -1,0 +1,1 @@
+<resources><style name="Theme.Miritayo" parent="android:style/Theme.Material.Light.NoActionBar"><item name="android:fontFamily">sans</item><item name="android:windowLightStatusBar">true</item><item name="android:statusBarColor">#F7FAFF</item><item name="android:navigationBarColor">#F7FAFF</item></style></resources>
